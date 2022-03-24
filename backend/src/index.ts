@@ -1,6 +1,6 @@
 import express, { Request, Response } from 'express';
 import cors from 'cors';
-import api from './apis';
+import api from './api';
 import joiErrors from './helpers/joi.error';
 import  './database/models/combinations';
 import { OK } from './utils/constants/statusCode';
