@@ -26,9 +26,14 @@ services:
     stdin_open: true # docker run -i
     tty: true # docker run -t
     build:
-      context: .
+      context: backend
       dockerfile: db.Dockerfile
     ports:
       - "5432:5432"
     volumes:
       - db:/var/lib/postgresql/data
+volumes:
+   frontend:
+   backend:
+   db:
+   
