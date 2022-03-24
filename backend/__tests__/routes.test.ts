@@ -2,22 +2,22 @@
 import request from 'supertest'
 import app from '../src/index'
 describe('Post Endpoints', () => {
-  it('Should Get Token', async () => {
+  it('Get Token Test', async () => {
     const res = await request(app)
-      .post('/api/token/ask')
+      .post('/api/token/get')
       .send({
-        amount:400,
-        meter_number:123458
+        amount:900,
+        meter_number:122258
         
     })
     expect(res.statusCode).toEqual(201)
   })
-  it('Should Not Add Because Amount is invalid', async () => {
+  it('Not Add Because Amount is invalid Test', async () => {
     const res = await request(app)
-      .post('/api/token/ask')
+      .post('/api/token/get')
       .send({
-        amount:450,
-        meter_number:123456
+        amount:550,
+        meter_number:128856
         
     })
     expect(res.statusCode).toEqual(409)

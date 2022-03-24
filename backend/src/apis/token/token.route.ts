@@ -7,7 +7,7 @@ import { askToken, paramToken  } from "./token.validator";
 //routing
 const router = Router()
 
-router.route('/ask')
+router.route('/get')
     .post(
     celebrate({
         body:askToken
