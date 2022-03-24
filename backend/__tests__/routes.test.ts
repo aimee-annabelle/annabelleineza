@@ -9,7 +9,7 @@ describe('Post Endpoints', () => {
       .post('/api/token/get')
       .send({
         amount:900,
-        meter_number:185358
+        meter_number:186358
         
     })
 
@@ -23,7 +23,7 @@ describe('Post Endpoints', () => {
       .post('/api/token/get')
       .send({
         amount:550,
-        meter_number:122656
+        meter_number:122856
         
     })
 
