@@ -12,7 +12,7 @@ RUN npm install --force
 
 COPY . /app
 
-RUN npm build
+RUN npm run build
 
 EXPOSE 3000
 
